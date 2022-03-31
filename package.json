@@ -38,9 +38,13 @@
     "maxWorkers": 2
   },
   "devDependencies": {
+    "@types/compression": "^1.7.2",
+    "@types/cors": "^2.8.12",
     "@types/esm": "^3.2.0",
     "@types/express": "^4.17.13",
     "@types/gulp": "^4.0.9",
+    "@types/helmet": "^4.0.0",
+    "@types/i18n": "^0.13.2",
     "@types/jest": "^27.4.1",
     "@types/node": "^17.0.23",
     "@typescript-eslint/eslint-plugin": "^5.17.0",
@@ -48,8 +52,10 @@
     "eslint": "^8.12.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
     "esm": "^3.2.25",
     "gulp": "^4.0.2",
     "gulp-typedoc": "^3.0.2",
@@ -62,7 +68,12 @@
     "typescript": "^4.6.3"
   },
   "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
     "express": "^4.17.3",
+    "helmet": "^5.0.2",
+    "i18n": "^0.14.2",
+    "openapi3-ts": "^2.0.2",
     "winston": "^3.6.0"
   }
 }

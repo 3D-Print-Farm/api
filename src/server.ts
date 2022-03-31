@@ -1,10 +1,12 @@
 import { Server } from 'http'
-import express from 'express'
+import { logger } from './services/logger'
+import { generateExpressApplication } from './config'
 
-const application = express()
-
+const application = generateExpressApplication()
 const server = new Server(application)
 
 server.listen(Number(process.env.PORT), () => {
-	console.log('Up')
+	logger.info('Server is up on http://localhost:' + process.env.PORT)
 })
+
+export default server
