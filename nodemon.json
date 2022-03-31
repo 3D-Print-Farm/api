@@ -1,0 +1,13 @@
+{
+  "watch": ["src"],
+  "ext": "js,ts,json",
+  "ignore": ["src/**/*.spec.ts", "node_modules"],
+  "exec": "ts-node ./src/server.ts",
+  "events": {
+    "restart": "npm run lint:fix && echo '<<<App restarted>>>'"
+  },
+  "env": {
+    "NAME": "api-server",
+    "PORT": "3000"
+  }
+}
